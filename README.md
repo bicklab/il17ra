@@ -54,7 +54,7 @@ Code:
 ## Association analysis
 We tested the association between gIL-17RA and CVD prevalence with logistic regression and the association between JAK2-CHIP and CVD incidence with time-to-event regression. We used LASSO regression to identify gIL-17RA variants that most significantly abrogate the association between JAK2-CHIP and CVD. We adjusted for age, age-squared, genetic sex, smoking status, genetic ancestry, body mass index, low-density lipoprotein cholesterol level, and baseline status of diabetes, hypertension, and autoimmune diseases (composite of rheumatoid arthritis, psoriasis, psoriatic arthritis, ankylosing spondylitis, and systemic lupus erythematosus). As a sensitivity analysis, the patients with autoimmune diseases were removed.
 
-Code available in: [Co-occurrence Rcode](https://github.com/bicklab/mca-1m/blob/main/KZ_CHIP_mCA_cooccurrence.R)
+Code available in: [Association code](https://github.com/bicklab/il17ra/blob/main/KZ_Omicspred_association.ipynb)
 
 
 ## Data
@@ -64,5 +64,4 @@ This analysis was performed on the [UK Biobank DNA Nexus Research Analysis Platf
 This work was supported by National Institutes of Health grant DP5OD029586 (A.G.B.) and National Institutes of Health grant T32GM007347 (Y.P.).  
 
 ## Contact
-Kun Zhao, kun.zhao@vumc.org
-Yash Pershad, yash.pershad@vanderbilt.edu
+Kun Zhao, kun.zhao@vumc.org; Yash Pershad, yash.pershad@vanderbilt.edu
