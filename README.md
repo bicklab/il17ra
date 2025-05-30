@@ -59,7 +59,7 @@ Code available in: [Association code](https://github.com/bicklab/il17ra/blob/mai
 ## Kaplan–Meier survival curve
 Kaplan–Meier survival curves were generated across tertiles (via the survminer package in R), where the red line represents the lowest 33 percentile of gIL-17RA score (Low), the blue line represents the middle 33 percentile of gIL-17RA score (Intermediate), and the green line represents highest 33 percentile of gIL-17RA score (High).
 
-Code available in: [Association code](https://github.com/bicklab/il17ra/blob/main/KZ_IL17RA_CVD_UKB.ipynb)
+Code available in: [Association code](https://github.com/bicklab/il17ra/blob/main/KZ_KMplot.R)
 
 ## Data
 This analysis was performed on the [UK Biobank DNA Nexus Research Analysis Platform](https://ukbiobank.dnanexus.com) and BioVU Terra.bio environment.
