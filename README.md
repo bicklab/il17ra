@@ -1,4 +1,4 @@
-# Genetically predicted interleukin-17-receptor-A abrogates risk of cardiovascular disease in JAK2 clonal hematopoiesis.
+#  The atheroprotective role of interleukin-17-receptor-A signaling in JAK2 clonal hematopoiesis.
 
 ## Calculation for genetically predicted IL-17RA levels
 We calculated genetically predicted scores of IL-17RA expression using 76 variants from a model trained with Somalogic protein measurements from the INTERVAL study (OPGS000019)
@@ -52,16 +52,20 @@ Code:
 
 
 ## Association analysis
-We tested the association between gIL-17RA and CVD prevalence with logistic regression and the association between JAK2-CHIP and CVD incidence with time-to-event regression. We used LASSO regression to identify gIL-17RA variants that most significantly abrogate the association between JAK2-CHIP and CVD. We adjusted for age, age-squared, genetic sex, smoking status, genetic ancestry, body mass index, low-density lipoprotein cholesterol level, and baseline status of diabetes, hypertension, and autoimmune diseases (composite of rheumatoid arthritis, psoriasis, psoriatic arthritis, ankylosing spondylitis, and systemic lupus erythematosus). As a sensitivity analysis, the patients with autoimmune diseases were removed.
+We tested the association between gIL-17RA and CVD prevalence with logistic regression and the association between JAK2-CHIP and CVD incidence with time-to-event regression. We used LASSO regression to identify gIL-17RA variants that most significantly abrogate the association between JAK2-CHIP and CVD. We tested the association between gIL-17RA and CVD prevalence with logistic regression. Given the relatively small number of events within each subtype, we applied Firth’s penalized logistic regression (via the logistf package in R). We adjusted for age, age-squared, genetic sex, smoking status, genetic ancestry, body mass index, low-density lipoprotein cholesterol level, and baseline status of diabetes, hypertension, and autoimmune diseases (composite of rheumatoid arthritis, psoriasis, psoriatic arthritis, ankylosing spondylitis, and systemic lupus erythematosus). As a sensitivity analysis, the patients with autoimmune diseases were removed.
 
-Code available in: [Association code](https://github.com/bicklab/il17ra/blob/main/KZ_Omicspred_association.ipynb)
+Code available in: [Association code](https://github.com/bicklab/il17ra/blob/main/KZ_IL17RA_CVD_UKB.ipynb)
 
+## Kaplan–Meier survival curve
+Kaplan–Meier survival curves were generated across tertiles (via the survminer package in R), where the red line represents the lowest 33 percentile of gIL-17RA score (Low), the blue line represents the middle 33 percentile of gIL-17RA score (Intermediate), and the green line represents highest 33 percentile of gIL-17RA score (High).
+
+Code available in: [Association code](https://github.com/bicklab/il17ra/blob/main/KZ_IL17RA_CVD_UKB.ipynb)
 
 ## Data
 This analysis was performed on the [UK Biobank DNA Nexus Research Analysis Platform](https://ukbiobank.dnanexus.com) and BioVU Terra.bio environment.
 
 ## Acknowledgements
-This work was supported by National Institutes of Health grant DP5OD029586 (A.G.B.) and National Institutes of Health grant T32GM007347 (Y.P.).  
+Individual-level sequence data and CHIP calls have been deposited with UK Biobank and are available to approved researchers by application (https://www.ukbiobank.ac.uk/register-apply/). Vanderbilt BioVU data are available through an application to the Vanderbilt Institute for Clinical and Translational Research (VICTR) BioVU Review Committee.
 
 ## Contact
 Kun Zhao, kun.zhao@vumc.org; Yash Pershad, yash.pershad@vanderbilt.edu
