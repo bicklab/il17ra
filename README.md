@@ -24,10 +24,10 @@ Code:
       -iin=project-GbjJ860J2p5ZJqZKZZVY883Z:file-FxZ2byjJkF65g2vX9Vx8vgb3 \
       -iin=project-GbjJ860J2p5ZJqZKZZVY883Z:file-GbxY6YQJ5YqBqx9qX6Yyv4Bk \
       -iin=project-GbjJ860J2p5ZJqZKZZVY883Z:file-Gx33yX8J2p5bpFKJQ356G20G \
-      -icmd="plink2 --bgen ukb22828_c19_b0_v3.bgen ref-first \
-                  --sample ukb22828_c19_b0_v3.sample \
-                  --score Macrophage_migration_inhibitory_factor_19.txt 1 4 6 header list-variants cols=scoresums \
-                  --out Macrophage_migration_inhibitory_factor_19" \
+      -icmd="plink2 --bgen ukb22828_c22_b0_v3.bgen ref-first \
+                  --sample ukb22828_c22_b0_v3.sample \
+                  --score Interleukin17_receptor_A_22.txt 1 4 6 header list-variants cols=scoresums \
+                  --out Interleukin17_receptor_A_22" \
       --destination "project-GbjJ860J2p5ZJqZKZZVY883Z:/omics_pred/score_files/" \
       --tag plink2_score \
       -y"
@@ -42,10 +42,10 @@ Code:
          -iin=project-GbjJ860J2p5ZJqZKZZVY883Z:file-FxZ2byjJkF65g2vX9Vx8vgb3 \
          -iin=project-GbjJ860J2p5ZJqZKZZVY883Z:file-GbxY6YQJ5YqBqx9qX6Yyv4Bk \
          -iin=project-GbjJ860J2p5ZJqZKZZVY883Z:file-Gx33yX8J2p5bpFKJQ356G20G \
-         -icmd="plink2 --bgen ukb22828_c19_b0_v3.bgen ref-first \
-                  --sample ukb22828_c19_b0_v3.sample \
-                  --score Macrophage_migration_inhibitory_factor_19.txt 1 4 6 header list-variants cols=scoresums \
-                  --out Macrophage_migration_inhibitory_factor_19" \
+         -icmd="plink2 --bgen ukb22828_c22_b0_v3.bgen ref-first \
+                  --sample ukb22828_c22_b0_v3.sample \
+                  --score Interleukin17_receptor_A_22.txt 1 4 6 header list-variants cols=scoresums \
+                  --out Interleukin17_receptor_A_22" \
          --destination "project-GbjJ860J2p5ZJqZKZZVY883Z:/omics_pred/score_files/" \
          --tag plink2_score \
          -y
